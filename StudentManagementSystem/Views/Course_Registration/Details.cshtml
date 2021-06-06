@@ -1,0 +1,42 @@
+﻿@model StudentManagementSystem.Course_Registration
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Course_Registration</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.UserID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UserID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BatchTable.Batch_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BatchTable.Batch_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CourseTable.Course_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CourseTable.Course_Name)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
